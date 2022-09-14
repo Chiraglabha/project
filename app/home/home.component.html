@@ -1,0 +1,34 @@
+ <div class="text-center" *ngIf= "data.length == 0" >
+  <h5 class="main-heading"> {{pageTitle}} </h5>
+</div> 
+<div class="count">
+  <h2 class="count">Count : {{data.length}}</h2>
+</div>
+<table class="table container mt-5" *ngIf= "data.length > 0">
+    <thead>
+      <tr *ngIf ="data">
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">EmailId</th>
+        <th scope="col">MobileNo</th>
+        <th scope="col">Department</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let dt of data">
+        <th scope="row">{{dt['Id']}}</th>
+        <td>{{dt['name']}}</td>
+        <td>{{dt['email']}}</td>
+        <td> {{dt['number']}} </td>
+        <td> {{dt['department']}} </td>
+        <td>
+          <button class="btn btn-primary" (click)= "editButton(dt['Id'])" >Edit</button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)= "deleteButton(dt['Id'])"  >Delete</button>
+        </td>
+      </tr>
+    </tbody>
+</table>

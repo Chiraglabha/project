@@ -1,0 +1,39 @@
+.heading{
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.button-container{
+    margin: 10px 30px 10px 0;
+}
+.employee{
+    background-color: #688fe4;
+    margin-right: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .9;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+.employee:hover{
+    opacity: .7;
+    color: white;
+}
+.addEmployee{
+    padding: 12px 15px;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    background: linear-gradient(to right, #688fe4 0%, #688fe4 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    border: none;
+    border-radius: 8px;
+    transition: background-position 0.3s;
+}
+.addEmployee:hover{
+    background-position:0 0;
+    color: white;
+}

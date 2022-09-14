@@ -1,0 +1,11 @@
+.main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%vw;
+    height: 100vh;
+}
+.count{
+    text-align: end;
+    margin: 10px 15px 10px 0;
+}
